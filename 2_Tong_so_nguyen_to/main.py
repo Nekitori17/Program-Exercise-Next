@@ -1,6 +1,4 @@
-from utils.number_operation import kiem_tra_so_nt
-
-inp = open("./src/2_sum_prime_number.inp", "r")
+inp = open("./main.inp", "r")
 
 def kiem_tra_so_nt(so: int) -> bool:
   if so == 1:
@@ -23,7 +21,7 @@ def tinh_tong_so_nguyen_to(list_hang: list) -> int:
 list_hang_1 = [int(x) for x in inp.readline().split()]
 list_hang_2 = [int(x) for x in inp.readline().split()]
 
-with open("./build/2_sum_prime_number.out", "w") as out:
+with open("./main.out", "w") as out:
   out.writelines([
     f"Tong cac so nguyen to hang 1: {tinh_tong_so_nguyen_to(list_hang_1)}" + "\n",
     f"Tong cac so nguyen to hang 2: {tinh_tong_so_nguyen_to(list_hang_2)}"
