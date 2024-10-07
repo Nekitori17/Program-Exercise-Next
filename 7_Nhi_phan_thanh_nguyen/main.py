@@ -1,0 +1,23 @@
+input_file = open("./main.inp", "r");
+
+day_so = [int(x) for x in input_file.readlines()]
+
+def nhi_phan_thanh_nguyen(so) -> int:
+  chuoi_so = str(so)
+  he_so = 1
+  tong = 0
+
+  for index in range(len(chuoi_so) - 1, -1, -1):
+    if chuoi_so[index] == "1":
+      tong += he_so
+    if he_so == 1:
+      he_so = 2
+    else:
+      he_so *= 2
+  return tong
+
+with open("./main.out", "w") as output_file:
+  output_file.writelines([
+    "So Nguyen: " + "\n" +
+    f"{"\n".join([str(y) for y in [nhi_phan_thanh_nguyen(x) for x in day_so]])}"
+  ])
