@@ -1,6 +1,6 @@
 from typing import *
 
-input_file = open("./main.inp", "r");
+input_file = open("./B5.inp", "r");
 
 ma_tran_tho = [x.split() for x in input_file.readlines()]
 ma_tran = []
@@ -26,7 +26,8 @@ def tinh_duong_cheo(ma_tran: List[List[int]]) -> Tuple[int, int]:
 
 tong_cac_duong_cheo = tinh_duong_cheo(ma_tran)
 
-with open("./main.out", "w") as output_file:
-  output_file.writelines([f"Tong duong cheo 1: {tong_cac_duong_cheo[0]}" + "\n",
-  f"Tong duong cheo 2: {tong_cac_duong_cheo[1]}"
+with open("./B5.out", "w") as output_file:
+  output_file.writelines([
+    f"{tong_cac_duong_cheo[0]}" + "\n",
+    f"{tong_cac_duong_cheo[1]}"
 ])

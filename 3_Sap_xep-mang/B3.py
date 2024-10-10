@@ -1,6 +1,6 @@
 from typing import *
 
-input_file = open("./main.inp", "r")
+input_file = open("./B3.inp", "r")
 
 def sap_xep_so(mang: List[int]) -> List[int]:
   mang_copy = mang.copy()
@@ -20,5 +20,5 @@ list_hang_2 = [int(x) for x in input_file.readline().split()]
 list_so_1 = sap_xep_so(list_hang_1)
 list_so_2 = sap_xep_so(list_hang_2)
 
-with open("./main.out", "w") as output_file:
-  output_file.write(f"Danh sach duoc sap xep: {" ".join([str(x) for x in sap_xep_so(list_hang_1 + list_hang_2)])}")
+with open("./B3.out", "w") as output_file:
+  output_file.write(f"{" ".join([str(x) for x in sap_xep_so(list_hang_1 + list_hang_2)])}")

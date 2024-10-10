@@ -1,6 +1,6 @@
 from typing import *
 
-input_file = open("./main.inp", "r")
+input_file = open("./B8.inp", "r")
 
 chuoi = input_file.readline()
 tong_so = 0
@@ -27,9 +27,9 @@ def co_the_doc_hoa(chuoi: str) -> str:
       day_chuoi_sau.append(chu)
   return " ".join(day_chuoi_sau)
 
-with open("./main.out", "w") as output_file:
+with open("./B8.out", "w") as output_file:
   output_file.writelines([
-    f"Tong cac so trong chuoi: {tong_so}" + "\n",
+    f"{tong_so}" + "\n",
     f"{chu_nhieu_nhat(chuoi)[0]} xuat hien nhieu nhat: {chu_nhieu_nhat(chuoi)[1]} lan" + "\n",
-    f"Chuoi sau khi xoa khoang trang: {co_the_doc_hoa(chuoi)}"
+    f"{co_the_doc_hoa(chuoi)}"
   ])

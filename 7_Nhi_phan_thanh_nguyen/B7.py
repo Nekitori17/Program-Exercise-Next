@@ -1,4 +1,4 @@
-input_file = open("./main.inp", "r");
+input_file = open("./B7.inp", "r");
 
 day_so = [int(x) for x in input_file.readlines()]
 
@@ -16,8 +16,7 @@ def nhi_phan_thanh_nguyen(so) -> int:
       he_so *= 2
   return tong
 
-with open("./main.out", "w") as output_file:
+with open("./B7.out", "w") as output_file:
   output_file.writelines([
-    "So Nguyen: " + "\n" +
     f"{"\n".join([str(y) for y in [nhi_phan_thanh_nguyen(x) for x in day_so]])}"
   ])

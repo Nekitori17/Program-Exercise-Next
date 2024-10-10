@@ -1,10 +1,10 @@
 try:
-  tep_dau_vao = open("./main.inp", "r")
+  tep_dau_vao = open("./B1.inp", "r")
 
   list_hang_1 = [int(x) for x in tep_dau_vao.readline().split()]
   list_hang_2 = [int(x) for x in tep_dau_vao.readline().split()]
   
-  with open("./main.out", "w") as out:
+  with open("./B1.out", "w") as out:
     out.writelines([
       f"Tong cac dong: {sum(list_hang_1)} | {sum(list_hang_2)}" + "\n",
       f"Trung binh cong cac dong la: {sum(list_hang_1) / len(list_hang_1)} | {sum(list_hang_2) / len(list_hang_2)}" + "\n",

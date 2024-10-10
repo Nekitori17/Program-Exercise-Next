@@ -1,4 +1,4 @@
-inp = open("./main.inp", "r")
+inp = open("./B2.inp", "r")
 
 def kiem_tra_so_nt(so: int) -> bool:
   if so == 1:
@@ -21,8 +21,8 @@ def tinh_tong_so_nguyen_to(list_hang: list) -> int:
 list_hang_1 = [int(x) for x in inp.readline().split()]
 list_hang_2 = [int(x) for x in inp.readline().split()]
 
-with open("./main.out", "w") as out:
+with open("./B2.out", "w") as out:
   out.writelines([
-    f"Tong cac so nguyen to hang 1: {tinh_tong_so_nguyen_to(list_hang_1)}" + "\n",
-    f"Tong cac so nguyen to hang 2: {tinh_tong_so_nguyen_to(list_hang_2)}"
+    f"{tinh_tong_so_nguyen_to(list_hang_1)}" + "\n",
+    f"{tinh_tong_so_nguyen_to(list_hang_2)}"
   ])
