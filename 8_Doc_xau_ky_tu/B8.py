@@ -1,5 +1,3 @@
-from typing import *
-
 input_file = open("./B8.inp", "r")
 
 chuoi = input_file.readline()
@@ -9,9 +7,9 @@ for chu in chuoi:
   if chu.isnumeric():
     tong_so += int(chu)
 
-def chu_nhieu_nhat(chuoi: str) -> Tuple[str, int]:
+def chu_nhieu_nhat(chuoi: str) -> tuple[str, int]:
   cache_chu = []
-  nhieu_nhat: Tuple[str, int] = ("", 0)
+  nhieu_nhat: tuple[str, int] = ("", 0)
   for chu in chuoi.lower():
     if chu not in cache_chu and chuoi.count(chu) > nhieu_nhat[1] and chu.isalpha():
       nhieu_nhat = (chu, chuoi.count(chu))

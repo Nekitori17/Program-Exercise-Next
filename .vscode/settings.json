@@ -1,7 +1,7 @@
 {
-  "cSpell.enabledFileTypes": {
-    "python": false,
-    "inp": false,
-    "out": false
-  }
+  "cSpell.enableFiletypes": [
+    "!python",
+    "!inp",
+    "!out"
+  ]
 }

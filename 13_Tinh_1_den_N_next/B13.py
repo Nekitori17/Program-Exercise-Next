@@ -7,3 +7,4 @@ def tinh_t_den_n(so: int) -> int:
 
 with open("./B13.out", "w") as output_file:
   output_file.write(str(tinh_t_den_n(so_vao)))
+

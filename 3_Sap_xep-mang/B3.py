@@ -1,8 +1,6 @@
-from typing import *
-
 input_file = open("./B3.inp", "r")
 
-def sap_xep_so(mang: List[int]) -> List[int]:
+def sap_xep_so(mang: list[int]) -> list[int]:
   mang_copy = mang.copy()
 
   for index in range(len(mang_copy)):

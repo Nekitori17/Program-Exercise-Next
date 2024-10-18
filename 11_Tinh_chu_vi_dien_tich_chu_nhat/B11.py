@@ -1,12 +1,10 @@
-from typing import *
-
 input_file = open("./B11.inp", "r")
 
 list_diem = [int(x) for x in input_file.readline().split()]
-a: Tuple[int, int] = (list_diem[0], list_diem[1])
-b: Tuple[int, int] = (list_diem[2], list_diem[3])
+a: tuple[int, int] = (list_diem[0], list_diem[1])
+b: tuple[int, int] = (list_diem[2], list_diem[3])
 
-def xac_dinh_chu_nhat(a: Tuple[int, int], b: Tuple[int, int]) -> Tuple[int, int] | int:
+def xac_dinh_chu_nhat(a: tuple[int, int], b: tuple[int, int]) -> tuple[int, int] | int:
   if a[0] == b[0] or a[1] == b[1]:
     return -1
   return (abs(a[0] - b[0]), abs(a[1] - b[1]))
