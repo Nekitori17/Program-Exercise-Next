@@ -3,5 +3,6 @@
     "!python",
     "!inp",
     "!out"
-  ]
+  ],
+  "python.analysis.autoImportCompletions": true
 }
