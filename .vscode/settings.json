@@ -4,5 +4,6 @@
     "!inp",
     "!out"
   ],
-  "python.analysis.autoImportCompletions": true
+  "python.analysis.autoImportCompletions": true,
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe"
 }
