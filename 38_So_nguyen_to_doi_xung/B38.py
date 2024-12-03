@@ -13,4 +13,4 @@ def so_nguyen_to_doi_xung(den: int) -> int:
   cac_so_nguyen_to_doi_xung = [x for x in range(11, den) if check_nguyen_to(x) and x == int(str(x)[::-1])]
   return len(cac_so_nguyen_to_doi_xung)
 
-print(so_nguyen_to_doi_xung(150))
+print(so_nguyen_to_doi_xung(so_vao))
